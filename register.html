@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>7wonders</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>SEVEN WONDERS OF THE WORLD</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li><a href="main.html"><b>HOME</b></a></li>
+					<li><a href="sevenwonders.html"><b>SEVEN WONDERS</b></a></li>
+					<li><a href="adminlogin.html"><b>ABOUT US</b></a></li>
+					
+
+				</ul>
+			</div>
+			
+			
+			<div class="content">
+				
+				<script>
+function validate()
+{
+	var userName=document.getElementById("txtName").value;
+	var lstName=document.getElementById("lastName").value;
+	var passwrd=document.getElementById("passwrd").value;
+	var emailid=document.getElementById("emailid").value;
+	if(userName.length==0)
+	{
+		alert("Please enter a name.");
+		return false;
+	}
+	else if(lstName.length==0)
+	{
+		alert("Please enter a last name.");
+		return false;
+	}
+	else if(emailid.length==0)
+	{
+		alert("Please enter a emailID.");
+		return false;
+	}
+	
+	else if(passwrd.length==0)
+	{
+		alert("Please enter a password.");
+		return false;
+		}
+	{
+		alert("Welcome " + userName + lstName );
+		alert("You have successfully registered!")
+	}
+}
+</script>
+<font face="Corbel">
+<h1>Register</h1>
+<form name="MyForm" action="" method="POST">
+<fieldset>
+<p><label for="txtName">First Name:</label>
+<input type=text id=txtName name=txtName>
+</p>
+<p><label for="lastName">Last Name:</label>
+<input type=text id=lastName name=lastName>
+</p>
+<p><label for="EMAILID">Enter EmailID:</label>
+<input type=text id=emailid name=emailid>
+</p>
+<p>Set Password:</label>
+<input type=password id=passwrd name=passwrd>
+</p>
+<p>
+<input type=Submit type=Submit value=Submit onClick=validate()>
+</p>
+</fieldset>
+</form>
+</font>
+				
+				
+			</div>
+			
+			<div class="footer">
+				&copy Developed By Mohammed Siamwala | Bilal Khan | Akshay Thorat
+			</div>
+			
+
+</html>

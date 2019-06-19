@@ -1,0 +1,77 @@
+<html>
+
+	<head>
+		<title>7wonders</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type='text/javascript'>
+		var isCtrl = false;
+		document.onkeyup=function(e)
+		{
+		if(e.which == 17)
+		isCtrl=false;
+		}
+		document.onkeydown=function(e)
+		{
+		if(e.which == 17)
+		isCtrl=true;
+		if(e.which == 123) return false; //disable F12
+		if((e.which == 16) || (e.which == 73) || (e.which == 74) && isCtrl == true) return false; //disable cntrl+shift+i and cntrl+shift+j
+		if((e.which == 85) || (e.which == 67) && isCtrl == true) // disable cntrl+U , cntrl+C,
+		{
+		// alert(&#8216;Keyboard shortcuts are cool!&#8217;);
+		return false;
+		}
+		}
+		var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+		if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+		function mischandler(){
+		return false;
+		}
+		function mousehandler(e){
+		var myevent = (isNS) ? e : event;
+		var eventbutton = (isNS) ? myevent.which : myevent.button;
+		if((eventbutton==2)||(eventbutton==3)) return false;
+		}
+		document.oncontextmenu = mischandler;
+		document.onmousedown = mousehandler;
+		document.onmouseup = mousehandler;
+		</script>
+
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>SEVEN WONDERS OF THE WORLD</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li><a href="main.html"><b>HOME</b></a></li>
+					<li><a href="sevenwonders.html"><b>SEVEN WONDERS</b></a></li>
+					<li><a href="aboutus.html"><b>ABOUT US</b></a></li>
+					<li><a href="register.html"><b>REGISTER</b></a></li>
+
+				</ul>
+			</div>
+
+
+			<div class="content">
+
+				<h1 FONT="Trebuchet MS Bold	">WELCOME</h1>
+				<center><i><p>Various lists of the Wonders of the World have been compiled from antiquity to the present day, to catalogue
+				the world's most spectacular natural wonders and manmade structures.</p>
+				<p>The Seven Wonders of the Ancient World is the first known list of the most remarkable creations of classical antiquity;
+				it was based on guidebooks popular among Hellenic sightseers and only includes works located around the Mediterranean
+				rim and in Mesopotamia. The number seven was chosen because the Greeks believed it represented perfection and plenty,
+				and because it was the number of the five planets known anciently, plus the sun and moon.</p></i></center>
+
+
+			</div>
+
+			<div class="footer">
+				&copy Developed By Mohammed Siamwala | Bilal Khan | Akshay Thorat
+			</div>
+
+	</body>
+
+</html>

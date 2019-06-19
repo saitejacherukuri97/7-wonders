@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>7wonders</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>SEVEN WONDERS OF THE WORLD</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li><a href="main.html"><b>HOME</b></a></li>
+					<li><a href="sevenwonders.html"><b>SEVEN WONDERS</b></a></li>
+					<li><a href="adminlogin.html"><b>ABOUT US</b></a></li>
+										<li><a href="register.php"><b>REGISTER</b></a></li>
+
+
+				</ul>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li><a href="gwc.html"><b>Great Wall of China (China) 
+</b></a></li>
+					<li><a href="crs.html"><b>Christ the Redeemer Statue (Rio de Janeiro)
+</b></a></li>
+					<li><a href="mp.html"><b>Machu Picchu (Peru)
+</b></a></li>
+					<li><a href="ci.html"><b>Chichen Itza (Yucatan Peninsula, Mexico)
+						</b></a></li>
+					<li><a href="trc.html"><b>The Roman Colosseum (Rome)
+</b></a></li>
+					<li><a href="tj.html"><b>Taj Majal (Agra, India)
+</b></a></li>
+					<li><a href="pj.html"><b>Petra (Jordan)
+
+</b></a></li>
+					
+				</ul>
+				
+			</div>
+			
+			
+			<div class="content">
+				
+				<div class="img">
+					<img class="myslide" src="hungry-history-vomitoriums-fact-or-fiction_Corbis-E.jpeg">
+					<img class="myslide" src="Colosseum_in_Rome,_Italy_-_April_2007.jpg">
+					<img class="myslide" src="History_The_Great_Wall_of_China_45274.jpg">
+					
+					<script type="text/javascript">
+					var slideElement=document.getElementsByClassName('myslide');
+					var index=0;
+					console.log(slideElement);
+					showImage();
+					
+					function showImage()
+					{
+						var i;
+						for(i=0;i<slideElement.length;i++)
+						{
+						slideElement[i].style.display='none';
+						}
+						
+						if(index>=slideElement.length)
+							{
+							index=0;
+							}
+							
+							slideElement[index].style.display='block';
+							index++;
+							setTimeout(showImage,2000);
+					}
+					</script></div></br>
+					<div class="article">
+					<p><i>The Colosseum or Coliseum (/kɒləˈsiːəm/ kol-ə-SEE-əm), also known as the Flavian Amphitheatre (Latin: Amphitheatrum Flavium; Italian: Anfiteatro Flavio [aŋfiteˈaːtro ˈflaːvjo] or Colosseo [kolosˈsɛːo]), is an oval amphitheatre in the centre of the city of Rome, Italy. Built of concrete and sand,[1] it is the largest amphitheatre ever built. The Colosseum is situated just east of the Roman Forum. Construction began under the emperor Vespasian in AD 72,[2] and was completed in AD 80 under his successor and heir Titus.[3] Further modifications were made during the reign of Domitian (81–96).[4] These three emperors are known as the Flavian dynasty, and the amphitheatre was named in Latin for its association with their family name</br></p>
+					</div>
+				
+			</div>
+			
+			<div class="footer">
+				&copy Developed By Mohammed Siamwala | Bilal Khan | Akshay Thorat
+			</div>
+			
+	</body>
+
+</html>

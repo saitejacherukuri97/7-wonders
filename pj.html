@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>7wonders</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>SEVEN WONDERS OF THE WORLD</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li><a href="main.html"><b>HOME</b></a></li>
+					<li><a href="sevenwonders.html"><b>SEVEN WONDERS</b></a></li>
+					<li><a href="aboutus.html"><b>ABOUT US</b></a></li>
+										<li><a href="register.php"><b>REGISTER</b></a></li>
+
+
+				</ul>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li><a href="gwc.html"><b>Great Wall of China (China) 
+</b></a></li>
+<li><a href="crs.html"><b>Christ the Redeemer Statue (Rio de Janeiro)
+</b></a></li>
+					<li><a href="mp.html"><b>Machu Picchu (Peru)
+</b></a></li>
+					<li><a href="ci.html"><b>Chichen Itza (Yucatan Peninsula, Mexico)
+						</b></a></li>
+					<li><a href="trc.html"><b>The Roman Colosseum (Rome)
+</b></a></li>
+					<li><a href="tj.html"><b>Taj Majal (Agra, India)
+</b></a></li>
+					<li><a href="pj.html"><b>Petra (Jordan)
+
+</b></a></li>
+					
+				</ul>
+				
+			</div>
+			
+			
+			<div class="content">
+				
+				<div class="img">
+					<img class="myslide" src="petra_the_royal_tombs.jpg">
+					<img class="myslide" src="petra_the_treasury.jpg">
+					<img class="myslide" src="petra-world-heritage-jordan.jpg">
+					
+					<script type="text/javascript">
+					var slideElement=document.getElementsByClassName('myslide');
+					var index=0;
+					console.log(slideElement);
+					showImage();
+					
+					function showImage()
+					{
+						var i;
+						for(i=0;i<slideElement.length;i++)
+						{
+						slideElement[i].style.display='none';
+						}
+						
+						if(index>=slideElement.length)
+							{
+							index=0;
+							}
+							
+							slideElement[index].style.display='block';
+							index++;
+							setTimeout(showImage,2000);
+					}
+					</script></div></br>
+					<div class="article">
+					<p><i>Petra (Arabic: البتراء, Al-Batrāʾ; Ancient Greek: Πέτρα), originally known to the Nabataeans as Raqmu, is a historical and archaeological city in southern Jordan. The city is famous for its rock-cut architecture and water conduit system. Another name for Petra is the Rose City due to the color of the stone out of which it is carved. Petra is one of the New7Wonders of the World.</br>
+					</div>
+				
+			</div>
+			
+			<div class="footer">
+				&copy Developed By Mohammed Siamwala | Bilal Khan | Akshay Thorat
+			</div>
+			
+	</body>
+
+</html>

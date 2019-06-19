@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>7wonders</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>SEVEN WONDERS OF THE WORLD</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li><a href="main.html"><b>HOME</b></a></li>
+					<li><a href="sevenwonders.html"><b>SEVEN WONDERS</b></a></li>
+					<li><a href="adminlogin.html"><b>ABOUT US</b></a></li>
+										<li><a href="register.php"><b>REGISTER</b></a></li>
+
+
+				</ul>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li><a href="gwc.html"><b>Great Wall of China (China) 
+</b></a></li>
+					<li><a href="crs.html"><b>Christ the Redeemer Statue (Rio de Janeiro)
+</b></a></li>
+					<li><a href="mp.html"><b>Machu Picchu (Peru)
+</b></a></li>
+					<li><a href="ci.html"><b>Chichen Itza (Yucatan Peninsula, Mexico)
+						</b></a></li>
+					<li><a href="trc.html"><b>The Roman Colosseum (Rome)
+</b></a></li>
+					<li><a href="tj.html"><b>Taj Majal (Agra, India)
+</b></a></li>
+					<li><a href="pj.html"><b>Petra (Jordan)
+
+</b></a></li>
+					
+				</ul>
+				
+			</div>
+			
+			
+			<div class="content">
+				
+				<div class="img">
+					<img class="myslide" src="timthumb.jpg">
+					<img class="myslide" src="Taj_Mahal.png">
+					<img class="myslide" src="1000px-Taj_Mahal-10_(cropped).jpg">
+					
+					<script type="text/javascript">
+					var slideElement=document.getElementsByClassName('myslide');
+					var index=0;
+					console.log(slideElement);
+					showImage();
+					
+					function showImage()
+					{
+						var i;
+						for(i=0;i<slideElement.length;i++)
+						{
+						slideElement[i].style.display='none';
+						}
+						
+						if(index>=slideElement.length)
+							{
+							index=0;
+							}
+							
+							slideElement[index].style.display='block';
+							index++;
+							setTimeout(showImage,2000);
+					}
+					</script></div></br>
+					<div class="article">
+					<h4><i>The Taj Mahal (/ˌtɑːdʒ məˈhɑːl/, more often /ˈtɑːʒ/;[3] meaning Crown of the Palace[4]) is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned 1628–1658), to house the tomb of his favourite wife, Mumtaz Mahal. The tomb is the centrepiece of a 17-hectare (42-acre)[5] complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</br></i>
+					</div>
+				
+			</div>
+			
+			<div class="footer">
+				&copy Developed By Mohammed Siamwala | Bilal Khan | Akshay Thorat
+			</div>
+			
+	</body>
+
+</html>

@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>7wonders</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>SEVEN WONDERS OF THE WORLD</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li><a href="main.html"><b>HOME</b></a></li>
+					<li><a href="sevenwonders.html"><b>SEVEN WONDERS</b></a></li>
+					<li><a href="aboutus.html"><b>ABOUT US</b></a></li>
+										<li><a href="register.php"><b>REGISTER</b></a></li>
+
+
+				</ul>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li><a href="gwc.html"><b>Great Wall of China (China) 
+</b></a></li>
+					<li><a href="crs.html"><b>Christ the Redeemer Statue (Rio de Janeiro)
+</b></a></li>
+					<li><a href="mp.html"><b>Machu Picchu (Peru)
+</b></a></li>
+					<li><a href="ci.html"><b>Chichen Itza (Yucatan Peninsula, Mexico)
+						</b></a></li>
+					<li><a href="trc.html"><b>The Roman Colosseum (Rome)
+</b></a></li>
+					<li><a href="tj.html"><b>Taj Majal (Agra, India)
+</b></a></li>
+					<li><a href="pj.html"><b>Petra (Jordan)
+
+</b></a></li>
+					
+				</ul>
+				
+			</div>
+			
+			
+			<div class="content">
+				
+				<div class="img">
+					<img class="myslide" src="site_0483_0001-1200-630-20080528103637.jpg">
+					<img class="myslide" src="chichen-itza-ruins.jpg">
+					<img class="myslide" src="Chichen_Itza_3.jpg">
+					
+					<script type="text/javascript">
+					var slideElement=document.getElementsByClassName('myslide');
+					var index=0;
+					console.log(slideElement);
+					showImage();
+					
+					function showImage()
+					{
+						var i;
+						for(i=0;i<slideElement.length;i++)
+						{
+						slideElement[i].style.display='none';
+						}
+						
+						if(index>=slideElement.length)
+							{
+							index=0;
+							}
+							
+							slideElement[index].style.display='block';
+							index++;
+							setTimeout(showImage,2000);
+					}
+					</script></div></br>
+					<div class="article">
+					<p><i></br>Chichen Itza was a major focal point in the Northern Maya Lowlands from the Late Classic (c. AD 600–900) through the Terminal Classic (c. AD 800–900) and into the early portion of the Postclassic period (c. AD 900–1200). The site exhibits a multitude of architectural styles, reminiscent of styles seen in central Mexico and of the Puuc and Chenes styles of the Northern Maya lowlands. The presence of central Mexican styles was once thought to have been representative of direct migration or even conquest from central Mexico, but most contemporary interpretations view the presence of these non-Maya styles more as the result of cultural diffusion.</p>
+					</div>
+				
+			</div>
+			
+			<div class="footer">
+				&copy Developed By Mohammed Siamwala | Bilal Khan | Akshay Thorat
+			</div>
+			
+	</body>
+
+</html>

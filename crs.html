@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>7wonders</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="heading">
+				<h1>SEVEN WONDERS OF THE WORLD</h1>
+			</div>
+			<div class="navigation">
+				<ul>
+					<li><a href="main.html"><b>HOME</b></a></li>
+					<li><a href="sevenwonders.html"><b>SEVEN WONDERS</b></a></li>
+					<li><a href="aboutus.html"><b>ABOUT US</b></a></li>
+										<li><a href="register.php"><b>REGISTER</b></a></li>
+
+
+				</ul>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li><a href="gwc.html"><b>Great Wall of China (China) 
+</b></a></li>
+					<li><a href="crs.html"><b>Christ the Redeemer Statue (Rio de Janeiro)
+</b></a></li>
+					<li><a href="mp.html"><b>Machu Picchu (Peru)
+</b></a></li>
+					<li><a href="ci.html"><b>Chichen Itza (Yucatan Peninsula, Mexico)
+						</b></a></li>
+					<li><a href="trc.html"><b>The Roman Colosseum (Rome)
+</b></a></li>
+					<li><a href="tj.html"><b>Taj Majal (Agra, India)
+</b></a></li>
+					<li><a href="pj.html"><b>Petra (Jordan)
+
+</b></a></li>
+					
+				</ul>
+				
+			</div>
+			
+			
+			<div class="content">
+				
+				<div class="img">
+					<img class="myslide" src="150754-004-4A5889AD.jpg">
+					<img class="myslide" src="0001294100000CB2-3740325-image-a-40_1471200609771.jpg">
+					<img class="myslide" src="27e3cb2a98b48a13caaca45e2d1bbb43.jpg">
+					
+					<script type="text/javascript">
+					var slideElement=document.getElementsByClassName('myslide');
+					var index=0;
+					console.log(slideElement);
+					showImage();
+					
+					function showImage()
+					{
+						var i;
+						for(i=0;i<slideElement.length;i++)
+						{
+						slideElement[i].style.display='none';
+						}
+						
+						if(index>=slideElement.length)
+							{
+							index=0;
+							}
+							
+							slideElement[index].style.display='block';
+							index++;
+							setTimeout(showImage,2000);
+					}
+					</script></div></br>
+					<div class="article">
+					<p><i></br>Christ the Redeemer (Portuguese: Cristo Redentor, standard Brazilian Portuguese: [ˈkɾistu ʁedẽˈtoʁ], local dialect: [ˈkɾiɕtŭ̻ xe̞dẽ̞ˈtoɦ]) is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski and built by the Brazilian engineer Heitor da Silva Costa, in collaboration with the French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida fashioned the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) tall, excluding its 8-metre (26 ft) pedestal. The arms stretch 28 metres (92 ft) wide.</p>
+					</div>
+				
+			</div>
+			
+			<div class="footer">
+				&copy Developed By Mohammed Siamwala | Bilal Khan | Akshay Thorat
+			</div>
+			
+	</body>
+
+</html>
